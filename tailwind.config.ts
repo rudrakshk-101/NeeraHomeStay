@@ -13,39 +13,15 @@ export default {
         body: ['var(--font-body)', ...fontFamily.sans]
       },
       colors: {
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
-        primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))'
-        },
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))'
-        },
-        destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))'
-        },
-        muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))'
-        },
-        accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))'
-        },
-        popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))'
-        },
-        card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))'
-        },
+        primary: '#336799', // Primary color
+        secondary: '#ffcc66', // Secondary color
+        text: '#ffffff', // Text color
+        background: '#ffcc66', // Background color
+        border: '#336799', // Border color matching primary for consistency
+        input: '#336799', // Input field color matching primary for consistency
+        ring: '#336799', // Ring color matching primary for consistency
+        foreground: '#ffffff', // Foreground color matching text for visibility
+        // Additional color variations can be added similarly
       },
       borderRadius: {
         xl: `calc(var(--radius) + 4px)`,

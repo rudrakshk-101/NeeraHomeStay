@@ -7,6 +7,7 @@ import Image from "next/image";
 import {FlipWords} from "../components/ui/flip-words"
 import awesomeVideo from "@/videos/example.mp4";
 import Video from "next-video";
+// import bgImg from "./"
 // import "./mainPage.css";
 
 const Component: React.FC = () => {
@@ -14,8 +15,8 @@ const Component: React.FC = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <section className="relative h-screen flex flex-col justify-center items-center bg-[url('/hero-image.jpg')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-black/50" />
+      <section className="relative h-screen flex flex-col justify-center items-center bg-[url('./bgimg1.jpg')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-black/900" />
         <div className="relative z-10 text-center text-white max-w-3xl px-4">
           <h1 className="text-4xl font-bold mb-4 sm:text-6xl">
           <FlipWords words={words} /> <br />
