@@ -7,6 +7,7 @@ import Image from "next/image";
 import {FlipWords} from "../components/ui/flip-words"
 import awesomeVideo from "@/videos/example.mp4";
 import Video from "next-video";
+import StartAnimation from "../components/ui/StartAnimation"
 // import bgImg from "./"
 // import "./mainPage.css";
 
@@ -15,11 +16,13 @@ const Component: React.FC = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <StartAnimation />
       <section className="relative h-screen flex flex-col justify-center items-center bg-[url('./bgimg1.jpg')] bg-cover bg-center">
         <div className="absolute inset-0 bg-black/900" />
         <div className="relative z-10 text-center text-white max-w-3xl px-4">
           <h1 className="text-4xl font-bold mb-4 sm:text-6xl">
-          <FlipWords words={words} /> <br />
+          {/* <FlipWords words={words} /> <br /> */}
+          Neera
           </h1>
           <p className="text-lg mb-8 sm:text-xl">
             Experience the comfort and charm of our cozy homestay, nestled in the heart of nature.

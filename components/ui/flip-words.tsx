@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export const FlipWords = ({
   words,
-  duration = 3000,
+  duration = 1,
   className,
 }: {
   words: string[];
@@ -14,8 +14,6 @@ export const FlipWords = ({
 }) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
-
-  // thanks for the fix Julian - https://github.com/Julian-AT
   const startAnimation = useCallback(() => {
     const word = words[words.indexOf(currentWord) + 1] || words[0];
     setCurrentWord(word);
@@ -45,7 +43,7 @@ export const FlipWords = ({
           y: 0,
         }}
         transition={{
-          duration: 0.4,
+          duration: 0.1,
           ease: "easeInOut",
           type: "spring",
           stiffness: 100,
@@ -71,8 +69,8 @@ export const FlipWords = ({
             initial={{ opacity: 0, y: 10, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{
-              delay: index * 0.08,
-              duration: 0.4,
+              delay: index * 0.01,
+              duration: 0.1,
             }}
             className="inline-block"
           >
