@@ -26,7 +26,7 @@ const ReviewCard: React.FC = () => {
             </div>
             </div>
             <div className="reviewCardBottom">
-                <p>The Stay was one of the Coziest one's, The best  part was the Cleanliness</p>
+                <p>The Stay was one of the Coziest one&apos;s, The best  part was the Cleanliness</p>
             </div>
           </div>
         </>
