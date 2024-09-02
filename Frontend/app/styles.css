@@ -37,9 +37,11 @@ body{
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-top: 0;
     margin-left: 5vw;
     min-height: 33vh;
     justify-content: space-around;
+    margin-top: 0vh;
 }
 
 .thebestcleaning{
@@ -311,7 +313,13 @@ body{
     text-align: center;
 }
 
+.text-centersmall{
+    text-align: left;
+}
 
+.hiddensmall{
+    display: block;
+}
 
 
 
@@ -360,6 +368,7 @@ body{
 
     .sectionSubheadings{
         font-size: 1.0rem;
+        width: 40vw;
     }
 
     .leftSection{
@@ -377,6 +386,10 @@ body{
 
     .section1img{
         width: 40vw;
+    }
+
+    .text-centersmall{
+        text-align: center;
     }
   }
 
@@ -410,6 +423,10 @@ body{
     .section2-1{
         flex-direction: column;
     }
+
+    .hiddensmall{
+        display: none;
+    }
   }
 
   @media (max-width: 750px){
@@ -425,6 +442,10 @@ body{
   }
 
   @media (max-width: 600px){
+
+    .leftSection{
+        margin-top: -10vh;
+    }
 
     .section1img {
         width: 200px !important;
@@ -463,15 +484,17 @@ body{
     .reviewImg{
         width: 30vw;
     }
+
+    .sectionSubheadings{
+        width: 60vw;
+    }
+
+    .leftSection{
+        justify-content: space-around;
+    }
   }
 
   @media (max-width: 450px){
-
-    
-
-    .sectionSubheadings{
-        width: 40vw;
-    }
 
     .section3Heading{
         width: 60vw;
@@ -497,8 +520,11 @@ body{
         margin-left: 0 !important;
     }
 
+
     .sectionHeadingsa{
         text-align: center !important;
         margin-top: -5vh;
     }
+
+
   }

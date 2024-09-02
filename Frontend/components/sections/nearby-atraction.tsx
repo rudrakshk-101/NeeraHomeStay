@@ -1,6 +1,6 @@
 "use client"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card" 
 import Image from "next/image"
 
 export default function NearbyAtraction() {
@@ -9,8 +9,8 @@ export default function NearbyAtraction() {
         <div className="w-screen min-h-screen section7 bg-[#f5f5f5]">
       <div className="max-w-6xl mx-auto">
         <header className="mb-8">
-          <h2 className="text-lg text-gray-500">-- Our Latest Projects</h2>
-          <h1 className="text-5xl font-bold mb-4">Explore our portfolio of <br/> <span className='text-[#0d726c]'>featured projects</span></h1> 
+          <h2 className="text-centersmall mb-5 text-lg text-gray-500">-- Our Latest Projects</h2>
+          <h1 className="text-centersmall sectionHeadings text-5xl font-bold mb-7">Explore our portfolio of <br/> <span className='text-[#0d726c]'>featured projects</span></h1> 
           {/* <Button className="mt-4 bg-yellow-400 text-black ml-auto">View All Projects</Button> */}
         </header>
         <div className="grid md:grid-cols-2 gap-8 grid-cols-1">

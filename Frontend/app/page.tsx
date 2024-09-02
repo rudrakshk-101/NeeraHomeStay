@@ -12,6 +12,7 @@ import person3 from "../components/images/person3.jpg"
 import ReviewSection from "../components/sections/reviews";
 import ContactUs from "../components/sections/contactUs"
 import NearbyAtraction from "../components/sections/nearby-atraction";
+import Navbar from "../components/ui/navbar"
 
 const Home: React.FC = () => {
   return (
@@ -21,8 +22,8 @@ const Home: React.FC = () => {
           <div className="flex items-center space-x-4">
             <PhoneIcon className="h-5 w-5" />
             <span>(408) 555-0120</span>
-            <MailIcon className="h-5 w-5" />
-            {/* <span>example@gmail.commmmmm</span> */}
+            <MailIcon className="hiddensmall h-5 w-5" />
+            <span className='hiddensmall'>example@gmail.com</span>
           </div>
           <div className="flex items-center space-x-4">
             <FacebookIcon className="h-5 w-5" />
@@ -32,37 +33,7 @@ const Home: React.FC = () => {
           </div>
         </div>
         </header>
-        <nav className='navbar'>
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center space-x-4">
-            <LogInIcon className="h-8 w-8" />
-            <span className="text-xl font-bold">Cleaning.</span>
-          </div>
-          {/* <div className="flex space-x-4">
-            <Link href="#" className="text-gray-700" prefetch={false}>
-              Home
-            </Link>
-            <Link href="#" className="text-gray-700" prefetch={false}>
-              Services
-            </Link>
-            <Link href="#" className="text-gray-700" prefetch={false}>
-              Projects
-            </Link>
-            <Link href="#" className="text-gray-700" prefetch={false}>
-              Blog
-            </Link>
-            <Link href="#" className="text-gray-700" prefetch={false}>
-              About Us
-            </Link>
-            <Link href="#" className="text-gray-700" prefetch={false}>
-              Contact Us
-            </Link>
-          </div> */}
-          <Button variant="default" className="bg-yellow-500 text-white">
-            Get A Quote
-          </Button>
-        </div>
-        </nav>
+        <Navbar />
         <section className='section1'>
           <div className="leftSection">
           <Badge variant="default" className="sectionSubheadings md:text-md text-lg thebestcleaning bg-white text-black mb-4">
