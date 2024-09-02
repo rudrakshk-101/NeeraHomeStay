@@ -429,6 +429,14 @@ body{
     }
   }
 
+  @media (max-width: 780px){
+    
+
+    .section7card{
+        width: 70vw;
+    }
+}
+
   @media (max-width: 750px){
     
 

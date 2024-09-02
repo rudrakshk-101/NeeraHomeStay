@@ -25,7 +25,7 @@ const ReviewSection: React.FC = () => {
             }
           },
           {
-            breakpoint: 750,
+            breakpoint: 780,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
