@@ -5,14 +5,19 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import placeholder from "../components/images/placeholder.jpeg";
 import Image from "next/image"
-import placeholder1 from "./download.jpeg";
-import person1 from "../components/images/person1.jpg"
-import person2 from "../components/images/person2.jpg"
-import person3 from "../components/images/person3.jpg"
+import placeholder1 from "../components/images/download.jpeg";
+// import person1 from "../components/images/person1.jpg"
+// import person2 from "../components/images/person2.jpg"
+// import person3 from "../components/images/person3.jpg"
 import ReviewSection from "../components/sections/reviews";
 import ContactUs from "../components/sections/contactUs"
 import NearbyAtraction from "../components/sections/nearby-atraction";
 import Navbar from "../components/ui/navbar"
+import HomePage from "../components/sections/Home-Page";
+import AboutUs from "../components/sections/AboutUs"
+import Host from "../components/sections/Host";
+import Gallery from "../components/sections/Gallery";
+import Services from "../components/sections/Services";
 
 const Home: React.FC = () => {
   return (
@@ -34,261 +39,11 @@ const Home: React.FC = () => {
         </div>
         </header>
         <Navbar />
-        <section className='section1'>
-          <div className="leftSection">
-          <Badge variant="default" className="sectionSubheadings md:text-md text-lg thebestcleaning bg-white text-black mb-4">
-            The Best Cleaning Services Solution
-          </Badge>
-          
-          <h1 className="sectionHeadings font-bold mb-2"><span className='text-[#0d726c]'>Professional</span> Cleaning Services Provider</h1>
-          <p className="section1subheading text-gray-700 pr-14 mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore.
-          </p>
-          <div className="flex space-x-4">
-            <Button variant="default" className="exploreMoreBtn bg-yellow-500 text-white">
-              Explore More --
-            </Button>
-            <Link href="#" className="exploreMoreBtn2 text-gray-700" prefetch={false}>
-              View All Services
-            </Link>
-          </div>
-          </div>
-          {/* <div className="rightsection"> */}
-          <div className="sectionImage md:w-1/2 flex justify-center items-center relative">
-            <div className='section1img'>
-            <Image
-              src={placeholder}
-              alt="Professional Teams"
-              className="rounded-full section1img"
-              width="300"
-              height="300"
-              style={{ aspectRatio: "300/300", objectFit: "cover" }}
-            />
-            </div>
-            <div className="absolute top-4 right-4 bg-white p-2 rounded shadow-lg">
-              <GroupIcon className="h-6 w-6" />
-              <span>Professional Teams</span>
-            </div>
-            <div className="absolute bottom-4 left-4 bg-white p-2 rounded shadow-lg">
-              <ShoppingCartIcon className="h-6 w-6" />
-              <span>Affordable Pricing</span>
-            </div>
-          </div>
-        </section>
-        <section className='section2'>
-          <div className="starStrip">
-          <p>✨</p> <p>HouseCleaning</p> <p>✨</p> <p>OfficeCleaning</p> <p>✨</p> <p>KitchenCleaning</p> <p>✨</p> <p>FurnitureCleaning</p> <p>✨</p>
-          </div>
-
-          <div className="section2-1">
-          <div className="leftsection2">
-          <div>
-          <Image
-              src={placeholder1}
-              alt="Professional Teams"
-              className="rounded-full section1img"
-              width="500"
-              height="300"
-              style={{ aspectRatio: "300/300", objectFit: "cover" }}
-            />
-          </div>
-          </div>
-          <div className="rightsection2">
-            {/* <p className='ml-0 rightsection2p'>--About Us</p> */}
-            <h1 className="sectionHeadings sectionHeadingsa font-bold mb-4">Your Top Choice for Cleaning Services</h1>
-            <div className="section2numbers flex justify-between mb-4 space-x-12">
-                <div className="text-centers">
-                  <span className="text-4xl font-bold text-green-700">6500+</span>
-                  <p className="text-gray-700 mt-2">Projects Completed</p>
-                </div>
-                <div className="text-centers">
-                  <span className="text-4xl font-bold text-green-700">60</span>
-                  <p className="text-gray-700 mt-2">Expert Cleaners</p>
-                </div>
-                <div className="text-centers">
-                  <span className="text-4xl font-bold text-green-700">99%</span>
-                  <p className="text-gray-700 mt-2">Satisfied Customers</p>
-                </div>
-              </div>
-          </div>
-          </div>
-        </section>
-        {/* <div className="starStrip">
-          <p>HouseCleaning</p> <p>✨</p> <p>OfficeCleaning</p> <p>✨</p> <p>KitchenCleaning</p> <p>✨</p> <p>FurnitureCleaning</p> <p>✨</p>
-          </div> */}
-        <section className="section4">
-          <p className='text-xl font-semibold'>-- Your Stay Host</p>
-          <h1 className="sectionHeadings font-bold mb-2">Meet Your <span className='text-[#0d726c]'>Host</span></h1>
-          <div className="section4cards">
-          <div className="section4card">
-          <Image
-              src={person1}
-              alt="Professional Teams"
-              className="section1img rounded-3xl w-[25vw]"
-              style={{height:"auto", aspectRatio: "300/300", objectFit: "cover" }}
-            />
-            <p className='font-semibold text-xl'>Jenny Alexander</p>
-            <p className='xl'>[Ceo,Host]</p>
-          </div>
-          <div className="section4card">
-          <Image
-              src={person2}
-              alt="Professional Teams"
-              className="section1img rounded-3xl w-[25vw]"
-              style={{height:"auto", aspectRatio: "300/300", objectFit: "cover" }}
-            />
-            <p className='font-semibold text-xl'>Jenny Alexander</p>
-            <p className='xl'>[Ceo,Host]</p>
-          </div>
-          <div className="section4card">
-          <Image
-              src={person3}
-              alt="Professional Teams"
-              className="section1img rounded-3xl w-[25vw]"
-              style={{height:"auto", aspectRatio: "300/300", objectFit: "cover" }}
-            />
-            <p className='font-semibold text-xl'>Jenny Alexander</p>
-            <p className='xl'>[Ceo,Host]</p>
-          </div>
-          </div>
-        </section>
-        <section className="section5 py-20 bg-background">
-        <div className="container flex justify-center items-center flex-col mx-auto px-4 md:px-6 lg:px-8">
-        <h1 className="sectionHeadings font-bold mb-4"> Explore Our <span className='text-[#0d726c]'>Gallery</span></h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <Link href="#" className="group relative overflow-hidden rounded-lg" prefetch={false}>
-              <Image
-                src="https://picsum.photos/1200/1800"
-                width={500}
-                height={500}
-                alt="Gallery"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="w-8 h-8 text-white" />
-              </div>
-            </Link>
-            <Link href="#" className="group relative overflow-hidden rounded-lg" prefetch={false}>
-              <Image
-                src="https://picsum.photos/1201/1800"
-                width={500}
-                height={500}
-                alt="Gallery"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="w-8 h-8 text-white" />
-              </div>
-            </Link>
-            <Link href="#" className="group relative overflow-hidden rounded-lg" prefetch={false}>
-              <Image
-                src="https://picsum.photos/1200/1801"
-                width={500}
-                height={500}
-                alt="Gallery"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="w-8 h-8 text-white" />
-              </div>
-            </Link>
-            <Link href="#" className="group relative overflow-hidden rounded-lg" prefetch={false}>
-              <Image
-                src="https://picsum.photos/1200/1802"
-                width={500}
-                height={500}
-                alt="Gallery"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="w-8 h-8 text-white" />
-              </div>
-            </Link>
-            <Link href="#" className="group relative overflow-hidden rounded-lg" prefetch={false}>
-              <Image
-                src="https://picsum.photos/1202/1800"
-                width={500}
-                height={500}
-                alt="Gallery"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="w-8 h-8 text-white" />
-              </div>
-            </Link>
-            <Link href="#" className="group relative overflow-hidden rounded-lg" prefetch={false}>
-              <Image
-                src="https://picsum.photos/1200/1803"
-                width={500}
-                height={500}
-                alt="Gallery"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="w-8 h-8 text-white" />
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
-        <section className="section3">
-          <div className="topsection3">
-              <div className="lefttopsection3">
-              <p className='text-white md:ml-5 ml-7 text-xl'>-- Our Services</p>
-
-              {/* <h1 className='section3heading text-5xl text-white font-bold mb-4'>Explore Our Cleaning Services</h1> */}
-              {/* <div className="section3heading flex flex-col">
-            <span className="text-5xl font-bold mb-4 text-black mr-2">Exlore Our</span>
-            <span className="text-5xl font-bold mb-4 text-yellow-500">HomeStay Services</span>
-          </div>   */}
-              <h1 className="section3Heading md:sectionHeadings text-white md:ml-5 ml-7 sectionHeadings w-[30.5rem] font-bold mb-4"><span className='text-yellow-500'>Explore Our </span>HomeStay Services</h1>
-              </div>
-              <button className='exploreMoreBtn3 bg-yellow-500 text-black'>
-                  View All Services --
-              </button>
-          </div>
-          <div className="bottomsection3">
-              <div className="section3card">
-                <h1 className='text-3xl font-bold mb-4'>House Cleaning</h1>
-                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero</p>
-                <Image
-              src={placeholder1}
-              alt="Professional Teams"
-              className="section1img rounded-2xl"
-              height="200"
-              width="300"
-              style={{ aspectRatio: "300/300", objectFit: "cover" }}
-            />
-              </div>
-
-              <div className="section3card">
-                <h1 className='text-3xl font-bold mb-4'>House Cleaning</h1>
-                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero</p>
-                <Image
-              src={placeholder1}
-              alt="Professional Teams"
-              className="section1img rounded-2xl"
-              height="200"
-              width="300"
-              style={{ aspectRatio: "300/300", objectFit: "cover" }}
-            />
-              </div>
-
-              <div className="section3card">
-                <h1 className='text-3xl font-bold mb-4'>House Cleaning</h1>
-                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero</p>
-                <Image
-              src={placeholder1}
-              alt="Professional Teams"
-              className="section1img rounded-2xl"
-              height="200"
-              width="300"
-              style={{ aspectRatio: "300/300", objectFit: "cover" }}
-            />
-              </div>
-          </div>
-        </section>
+        <HomePage />
+        <AboutUs />
+        <Host />
+        <Gallery />
+        <Services />
         <NearbyAtraction />
         <ReviewSection />
         <ContactUs />

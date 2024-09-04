@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <LogInIcon className="h-8 w-8" />
-            <span className="text-xl font-bold">Cleaning.</span>
+            <span className="text-xl font-bold">Neera.</span>
           </div>
 
           <div className="menu-icons" onClick={handleClick}>

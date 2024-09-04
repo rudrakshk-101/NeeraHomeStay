@@ -10,10 +10,9 @@ export default function ContactUs() {
     <section className="section8 flex flex-col items-center justify-center min-h-screen p-4 bg-gray-100">
       <div className="flex flex-col mt-20 justify-center gap-12 w-full max-w-full p-9 space-y-8 md:flex-row md:space-y-0 md:space-x-8 section8">
         <div className="flex-1 max-w-xl">
-          <h2 className="text-2xl font-bold">Contact Us</h2>
-          <h3 className="mt-2 text-3xl font-bold">
-            Get Your <span className="text-blue-500">Free Quote</span> Today!
+          <h3 className="mt-2 text-4xl font-bold"><span className="text-blue-500">Neera</span> Stories
           </h3>
+          <h2 className="text-xl">For any inquiries, bookings or information, reach out to us via phone, email or our online form. We’re here to help you plan a spiritually enriching stay at Neera. </h2>
           <form className="mt-6 space-y-4">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
               <div>
@@ -36,23 +35,38 @@ export default function ContactUs() {
               </div>
               <div>
                 <label htmlFor="service" className="block text-sm font-medium">
-                  Service *
+                  Number of Guests *
                 </label>
                 <Select>
                   <SelectTrigger id="service" aria-label="Service">
                     <SelectValue placeholder="Select Services" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="service1">Service 1</SelectItem>
-                    <SelectItem value="service2">Service 2</SelectItem>
-                    <SelectItem value="service3">Service 3</SelectItem>
+                    <SelectItem value="service1">1</SelectItem>
+                    <SelectItem value="service2">2</SelectItem>
+                    <SelectItem value="service3">3</SelectItem>
+                    <SelectItem value="service1">4</SelectItem>
+                    <SelectItem value="service2">5</SelectItem>
+                    <SelectItem value="service3">6</SelectItem>
                   </SelectContent>
                 </Select>
+              </div>
+              <div>
+                <label htmlFor="date-from" className="block text-sm font-medium">
+                  From *
+                </label>
+                <Input id="date-from" type="date" />
+              </div>
+              <div>
+                <label htmlFor="date-to" className="block text-sm font-medium">
+                  To *
+                </label>
+                <Input id="date-to" type="date" />
               </div>
             </div>
             <div>
               <label htmlFor="message" className="block text-sm font-medium">
-                Your Message *
+                Additional Requirements *
               </label>
               <Textarea id="message" placeholder="Enter here..." className="min-h-[100px]" />
             </div>
