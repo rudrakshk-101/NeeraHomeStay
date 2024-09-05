@@ -56,6 +56,13 @@ html{
 .section1subheading{
     font-size: 1rem;
     margin-right: 2.5vw;
+    text-align: justify;
+}
+
+.section2subheading{
+    font-size: 1rem;
+    margin-right: 2.5vw;
+    text-align: justify;
 }
 
 .exploreMoreBtn{
@@ -139,7 +146,7 @@ html{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 30vh;
+    height: 60vh;
     align-items: center;
     padding-bottom: 5vh;
 }
@@ -327,6 +334,21 @@ html{
     display: block;
 }
 
+.section1img{
+    position: relative;
+}
+
+.section1Img2{
+    position: absolute;
+    /* top: 0px; */
+    bottom: 0vw;
+    left: 130px;
+}
+
+.professionalTeam{
+    width: 11vw;
+  }
+
 
 
 
@@ -384,6 +406,12 @@ html{
 
     .section1subheading{
         font-size: 0.8rem;
+        text-align: left;
+    }
+
+    .section2subheading{
+        font-size: 0.8rem;
+        text-align: left;
     }
 
     .reviewImg{
@@ -392,10 +420,28 @@ html{
 
     .section1img{
         width: 40vw;
+
+    }
+
+    .sectionImage{
+        margin-top: -40vh;
+    }
+
+    .leftSection p{
+        text-align: justify;
+        width: 50vw;
     }
 
     .text-centersmall{
         text-align: center;
+    }
+
+    section1img img{
+        width: 10vw !important;
+    }
+
+    .section3heading{
+        width: 100vw;
     }
   }
 
@@ -429,10 +475,14 @@ html{
     }
 
     .section2-1{
-        flex-direction: column;
+        flex-direction: row-reverse;
     }
 
     .hiddensmall{
+        display: none;
+    }
+
+    .exploreMoreBtn3{
         display: none;
     }
   }
@@ -444,8 +494,16 @@ html{
         width: 70vw;
     }
 
+    .pp{
+        width: 80vw;
+    }
+
     .starStrip{
         font-size: 0.8rem;
+    }
+
+    .topsection3{
+        align-items: center;
     }
 }
 
@@ -466,10 +524,28 @@ html{
     .leftSection{
         margin-top: -10vh;
     }
+    
+    .leftSection p{
+        text-align: justify;
+        width: 60vw;
+    }
 
     .section1img {
-        width: 200px !important;
-        height: auto !important;
+        width: 50vw;
+        height: auto;
+      }
+
+      .section1Img2{
+        left: 50px;
+      }
+
+      .professionalTeam{
+        width: 20vw;
+        font-size: 10px;
+      }
+
+      .professionalTeam svg{
+        width: 20px;
       }
 
       .section1subheading{
@@ -477,13 +553,16 @@ html{
         width: 60vw;
       }
 
-      .rightsection2{
-        width: 90vw;
+      .section2subheading{
+        font-size: 1rem;
+        width: 60vw;
       }
 
-    .section2-1{
-        flex-direction: column;
-    }
+      .leftsection2 img{
+        width: 30vw;
+        margin-left: 15vw;
+      }
+    
 
     .sectionSubheadings{
         width: 50vw;
@@ -517,7 +596,12 @@ html{
   @media (max-width: 450px){
 
     .section3Heading{
-        width: 60vw;
+        width: 80vw;
+        align-items: center;
+    }
+
+    .topsection3{
+        height: 50vh;
     }
 
     .topsection3 button{
@@ -530,7 +614,7 @@ html{
         justify-content: center;
         align-items: start;
         text-align: left;
-        margin-left: 20vw;
+        margin-left: 5vw;
         bottom: 10vh !important;
     }
 
@@ -546,5 +630,46 @@ html{
         margin-top: -5vh;
     }
 
+    .leftsection2{
+        display: none;
+      width: 40vw;
+      margin-left: 5vw;
+      margin-top: -30vh;
+    }
+
+    .rightsection2{
+        width: 100vw;
+    }
+
+    .section1subheading{
+        width: 40vw;
+        text-align: justify;
+        /* margin-top: -10vw; */
+    }
+
+    .section2subheading{
+        width: 100vw;
+        margin: 10vw 5vw;
+        text-align: justify;
+        margin-top: -10vw;
+    }
+
+    .section4 p{
+        margin: 0 ;
+        padding: 0 3vw;
+    }
+
+    .section5 p{
+        margin: 5vh 0 ;
+        padding: 0 3vw;
+        width: 90vw;
+    }
+
+    .section3 .pp{
+        margin: 5vh 0 ;
+        padding: 0 3vw;
+        width: 90vw;
+        margin-bottom: 10vh;
+    }
 
   }

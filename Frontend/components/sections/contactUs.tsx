@@ -12,7 +12,7 @@ export default function ContactUs() {
         <div className="flex-1 max-w-xl">
           <h3 className="mt-2 text-4xl font-bold"><span className="text-blue-500">Neera</span> Stories
           </h3>
-          <h2 className="text-xl">For any inquiries, bookings or information, reach out to us via phone, email or our online form. We’re here to help you plan a spiritually enriching stay at Neera. </h2>
+          <h2 className="text-md mt-5 mb-5">For any inquiries, bookings or information, reach out to us via phone, email or our online form. We’re here to help you plan a spiritually enriching stay at Neera. </h2>
           <form className="mt-6 space-y-4">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
               <div>

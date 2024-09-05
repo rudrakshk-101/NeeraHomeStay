@@ -3,15 +3,16 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import placeholder from "../images/placeholder.jpeg";
+import placeholder2 from "../images/placeholder2.jpeg";
 
 const HomePage: React.FC = () => {
     return (
 
 <section className='section1'>
           <div className="leftSection">
-          <Badge variant="default" className="sectionSubheadings md:text-md text-lg thebestcleaning bg-white text-black mb-4">
+          {/* <Badge variant="default" className="sectionSubheadings md:text-md text-lg thebestcleaning bg-white text-black mb-4">
             The Best Home Stay to Stay
-          </Badge>
+          </Badge> */}
           
           <h1 className="sectionHeadings font-bold mb-2">Welcome to Neera : <span className='text-[#0d726c]'> The Guest House! </span></h1>
           <p className="section1subheading text-gray-700 pr-14 mb-8">
@@ -35,14 +36,22 @@ const HomePage: React.FC = () => {
               className="rounded-full section1img"
               width="300"
               height="300"
+              style={{ aspectRatio: "180/300", objectFit: "cover" }}
+            />
+            <Image
+              src={placeholder2}
+              alt="Professional Teams"
+              className="section1Img2 rounded-full section1img"
+              width="300"
+              height="300"
               style={{ aspectRatio: "300/300", objectFit: "cover" }}
             />
             </div>
-            <div className="absolute top-4 right-4 bg-white p-2 rounded shadow-lg">
+            <div className="professionalTeam absolute top-10 right-10 bg-[#0d726c] text-white p-2 rounded shadow-lg">
               <GroupIcon className="h-6 w-6" />
-              <span>Professional Teams</span>
+              <span>Comfort like Home</span>
             </div>
-            <div className="absolute bottom-4 left-4 bg-white p-2 rounded shadow-lg">
+            <div className="professionalTeam absolute bottom-10 left-10 bg-[#0d726c] text-white p-2 rounded shadow-lg">
               <ShoppingCartIcon className="h-6 w-6" />
               <span>Affordable Pricing</span>
             </div>

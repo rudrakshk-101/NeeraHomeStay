@@ -6,8 +6,8 @@ const Services: React.FC = () => {
         <section className="section3">
           <div className="topsection3">
               <div className="lefttopsection3">
-              <h1 className="section3Heading md:sectionHeadings text-white md:ml-5 ml-7 sectionHeadings w-[30.5rem] font-bold mb-4"><span className='text-yellow-500'>Explore Our </span>HomeStay Services</h1>
-              <p className='text-white w-[40vw] md:ml-5 ml-7 text-lg'>We provide a range of exceptional services and amenities designed to make your stay comfortable and memorable.</p>
+              <h1 className="section3Heading md:sectionHeadings text-center text-white md:ml-5 ml-7 sectionHeadings w-[30.5rem] font-bold mb-4"><span className='text-yellow-500'>Explore Our </span>HomeStay Services</h1>
+              <p className='pp text-justify text-white w-[40vw] md:ml-5 ml-7 text-lg sm:text-md'>We provide a range of exceptional services and amenities designed to make your stay comfortable and memorable.</p>
               </div>
               <button className='exploreMoreBtn3 bg-yellow-500 text-black'>
                   View All Services --

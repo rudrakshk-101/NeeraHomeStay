@@ -48,7 +48,7 @@ const ReviewSection: React.FC = () => {
             <p className='text-xl font-semibold mt-14'>-- Your Stay Host</p>
             {/* <h1 className="text-5xl font-bold mb-4 mt-10">What Our<span className='text-[#0d726c]'>Clients Say</span></h1> */}
             <h3 className="text-centersmall mt-2 text-3xl font-bold mb-9">
-            What Our <span className="text-[#0d726c]">Clients Say</span> Today!
+            What Our <span className="text-[#0d726c]">Clients Say</span>
           </h3>
             </div>
             <div className="slider-container">
