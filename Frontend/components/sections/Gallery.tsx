@@ -7,7 +7,7 @@ const Gallery: React.FC = () => {
         <div className="container flex justify-center items-center flex-col mx-auto px-4 md:px-6 lg:px-8">
         <h1 className="sectionHeadings font-bold mb-4"> Explore Our <span className='text-[#0d726c]'>Gallery</span></h1>
         <p className="text-justify mr-10 ml-10 text-gray-700 pr-14 pl-14 mb-8">
-        Explore the beauty and calm of "Neera: The Guest House" in our gallery. See the peaceful views of the waterbody, our comfortable rooms, and the serene surroundings. Our images show what makes Neera a special and welcoming place to stay.
+        Explore the beauty and calm of &quot;Neera: The Guest House&quot; in our gallery. See the peaceful views of the waterbody, our comfortable rooms, and the serene surroundings. Our images show what makes Neera a special and welcoming place to stay.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <Link href="#" className="group relative overflow-hidden rounded-lg" prefetch={false}>

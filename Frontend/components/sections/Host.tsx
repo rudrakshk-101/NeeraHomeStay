@@ -9,7 +9,7 @@ const Host: React.FC = () => {
           {/* <p className='text-xl font-semibold'>-- Your Stay Host</p> */}
           <h1 className="sectionHeadings font-bold mb-2">Meet Your <span className='text-[#0d726c]'>Host</span></h1>
           <p className="text-justify mr-10 ml-10 text-gray-700 pr-14 pl-14 mb-8">
-          At "Neera: The Guest House," your stay is made memorable by Mr. and Mrs. Sharma. This warm senior couple, with over 65 years of life experience, brings a personal touch to every visit. They, along with their friendly team, make sure you feel like part of the family, offering not just a place to stay but a true sense of belonging.
+          At &quot;Neera: The Guest House,&quot; your stay is made memorable by Mr. and Mrs. Sharma. This warm senior couple, with over 65 years of life experience, brings a personal touch to every visit. They, along with their friendly team, make sure you feel like part of the family, offering not just a place to stay but a true sense of belonging.
           </p>
           <div className="section4cards">
           <div className="section4card">
