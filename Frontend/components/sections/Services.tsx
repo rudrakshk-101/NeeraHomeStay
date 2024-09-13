@@ -1,7 +1,17 @@
+"use client";
 import Image from "next/image";
 import placeholder1 from "../images/download.jpeg";
+import {ExpandableCardDemo} from "../ui/trialservices"
 
 const Services: React.FC = () => {
+  const items = [
+    { text: 'Air Conditioner Rooms', active: false },
+    { text: 'Well-Hygiened Washrooms', active: true },
+    { text: '2 and 4-Wheeler Parking Spaces', active: false },
+    { text: 'Wi-Fi Connectivity', active: false },
+    { text: 'Play and Fun Games', active: false },
+    { text: 'Family Environment', active: false }
+  ];
     return (
         <section className="section3">
           <div className="topsection3">
@@ -14,7 +24,7 @@ const Services: React.FC = () => {
               </button>
           </div>
           <div className="bottomsection3">
-              <div className="section3card">
+              {/* <div className="section3card">
                 <h1 className='text-3xl font-bold mb-4'>Air Conditioner Rooms</h1>
                 <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero</p>
                 <Image
@@ -89,7 +99,7 @@ const Services: React.FC = () => {
               width="300"
               style={{ aspectRatio: "300/300", objectFit: "cover" }}
             />
-              </div>
+              </div> */}
               <div className="section3card">
                 <h1 className='text-3xl font-bold mb-4'>One-Way Free Drop to Mahakaleshwar Temple</h1>
                 <p className='text-sm'>Enjoy a complimentary ride to the temple for a hassle-free visit. </p>
@@ -141,6 +151,16 @@ const Services: React.FC = () => {
             />
               </div>
           </div>
+          
+          <div>
+      <ul className="bullet-point">
+        {items.map((item, index) => (
+          <li key={index} className={""}>
+            <p className="text-yellow-500"><span className="text-3xl bold">-</span> {item.text}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
         </section>
     )}
 

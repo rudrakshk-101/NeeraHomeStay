@@ -8,8 +8,10 @@ import ReviewCard from "../../components/ui/reviewCard";
 
 const ReviewSection: React.FC = () => {
     var settings = {
+        autoplay: true,
+        autoplaySpeed: 1000,
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 2,

@@ -13,7 +13,7 @@ export default function NearbyAtraction() {
           <h2 className="text-centersmall text-lg text-gray-500">Explore the rich spiritual and cultural heritage of Ujjain with these nearby attractions:</h2>
           {/* <Button className="mt-4 bg-yellow-400 text-black ml-auto">View All Projects</Button> */}
         </header>
-        <div className="grid md:grid-cols-2 gap-8 grid-cols-1">
+        <div className="grid md:grid-cols-3 gap-8 grid-cols-1">
           <Card className="url('https://picsum.photos/1201/1800')">
             <CardContent>
               <Image
