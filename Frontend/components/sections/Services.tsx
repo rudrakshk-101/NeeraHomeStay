@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import placeholder1 from "../images/download.jpeg";
-import {ExpandableCardDemo} from "../ui/trialservices"
 
 const Services: React.FC = () => {
   const items = [
