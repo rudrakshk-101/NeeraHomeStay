@@ -12,7 +12,7 @@ const Gallery: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <Link href="#" className="group relative overflow-hidden rounded-lg" prefetch={false}>
               <Image
-                src="https://picsum.photos/1200/1800"
+                src="https://picsum.photos/1200/1200"
                 width={500}
                 height={500}
                 alt="Gallery"
@@ -24,7 +24,7 @@ const Gallery: React.FC = () => {
             </Link>
             <Link href="#" className="group relative overflow-hidden rounded-lg" prefetch={false}>
               <Image
-                src="https://picsum.photos/1201/1800"
+                src="https://picsum.photos/1200/1201"
                 width={500}
                 height={500}
                 alt="Gallery"
@@ -36,7 +36,7 @@ const Gallery: React.FC = () => {
             </Link>
             <Link href="#" className="group relative overflow-hidden rounded-lg" prefetch={false}>
               <Image
-                src="https://picsum.photos/1200/1801"
+                src="https://picsum.photos/1200/1202"
                 width={500}
                 height={500}
                 alt="Gallery"
@@ -48,7 +48,7 @@ const Gallery: React.FC = () => {
             </Link>
             <Link href="#" className="group relative overflow-hidden rounded-lg" prefetch={false}>
               <Image
-                src="https://picsum.photos/1200/1802"
+                src="https://picsum.photos/1200/1203"
                 width={500}
                 height={500}
                 alt="Gallery"
@@ -60,7 +60,7 @@ const Gallery: React.FC = () => {
             </Link>
             <Link href="#" className="group relative overflow-hidden rounded-lg" prefetch={false}>
               <Image
-                src="https://picsum.photos/1202/1800"
+                src="https://picsum.photos/1200/1204"
                 width={500}
                 height={500}
                 alt="Gallery"
@@ -72,7 +72,7 @@ const Gallery: React.FC = () => {
             </Link>
             <Link href="#" className="group relative overflow-hidden rounded-lg" prefetch={false}>
               <Image
-                src="https://picsum.photos/1200/1803"
+                src="https://picsum.photos/1200/1205"
                 width={500}
                 height={500}
                 alt="Gallery"

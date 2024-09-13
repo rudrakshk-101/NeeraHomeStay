@@ -102,7 +102,6 @@ html{
 
 .leftsection2{
     width: 50vw;
-    height: 40vh;
     display: flex;
   justify-content: center;
   align-items: center;
@@ -197,7 +196,7 @@ html{
     width: 100%;
     justify-content: space-around;
     margin-top: 5vh;
-    padding: 0 10vw;
+    padding: 0 15vw;
 } 
 
 .section4{
@@ -560,6 +559,7 @@ html{
 
       .leftsection2 img{
         width: 30vw;
+        height: 60vh !important;
         margin-left: 15vw;
       }
     
