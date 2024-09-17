@@ -1,15 +1,21 @@
 "use client";
 import Image from "next/image";
 import placeholder1 from "../images/download.jpeg";
+import ac from "../images/ac.png";
+import clean from "../images/clean.png"
+import parking from "../images/parking.png"
+import wifi from "../images/wifi.png"
+import games from "../images/games.png"
+import family from "../images/family.png"
 
 const Services: React.FC = () => {
   const items = [
-    { text: 'Air Conditioner Rooms', active: false },
-    { text: 'Well-Hygiened Washrooms', active: true },
-    { text: '2 and 4-Wheeler Parking Spaces', active: false },
-    { text: 'Wi-Fi Connectivity', active: false },
-    { text: 'Play and Fun Games', active: false },
-    { text: 'Family Environment', active: false }
+    { text: 'Air Conditioner Rooms', active: false, icon: ac },
+    { text: 'Well-Hygiened Washrooms', active: true, icon:clean },
+    { text: '2 and 4-Wheeler Parking Spaces', active: false, icon:parking },
+    { text: 'Wi-Fi Connectivity', active: false, icon:wifi },
+    { text: 'Play and Fun Games', active: false, icon:games },
+    { text: 'Family Environment', active: false, icon:family }
   ];
     return (
         <section className="section3">
@@ -23,82 +29,6 @@ const Services: React.FC = () => {
               </button>
           </div>
           <div className="bottomsection3">
-              {/* <div className="section3card">
-                <h1 className='text-3xl font-bold mb-4'>Air Conditioner Rooms</h1>
-                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero</p>
-                <Image
-              src={placeholder1}
-              alt="Professional Teams"
-              className="section1img rounded-2xl"
-              height="200"
-              width="300"
-              style={{ aspectRatio: "300/300", objectFit: "cover" }}
-            />
-              </div>
-
-              <div className="section3card">
-                <h1 className='text-3xl font-bold mb-4'>Well-Hygiened Washrooms</h1>
-                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero</p>
-                <Image
-              src={placeholder1}
-              alt="Professional Teams"
-              className="section1img rounded-2xl"
-              height="200"
-              width="300"
-              style={{ aspectRatio: "300/300", objectFit: "cover" }}
-            />
-              </div>
-
-              <div className="section3card">
-                <h1 className='text-3xl font-bold mb-4'>2 and 4-Wheeler Parking Spaces</h1>
-                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero</p>
-                <Image
-              src={placeholder1}
-              alt="Professional Teams"
-              className="section1img rounded-2xl"
-              height="200"
-              width="300"
-              style={{ aspectRatio: "300/300", objectFit: "cover" }}
-            />
-              </div>
-              <div className="section3card">
-                <h1 className='text-3xl font-bold mb-4'>Wi-Fi Connectivity</h1>
-                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero</p>
-                <Image
-              src={placeholder1}
-              alt="Professional Teams"
-              className="section1img rounded-2xl"
-              height="200"
-              width="300"
-              style={{ aspectRatio: "300/300", objectFit: "cover" }}
-            />
-              </div>
-
-              <div className="section3card">
-                <h1 className='text-3xl font-bold mb-4'>Play and Fun Games</h1>
-                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero</p>
-                <Image
-              src={placeholder1}
-              alt="Professional Teams"
-              className="section1img rounded-2xl"
-              height="200"
-              width="300"
-              style={{ aspectRatio: "300/300", objectFit: "cover" }}
-            />
-              </div>
-
-              <div className="section3card">
-                <h1 className='text-3xl font-bold mb-4'>Family Environment</h1>
-                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero</p>
-                <Image
-              src={placeholder1}
-              alt="Professional Teams"
-              className="section1img rounded-2xl"
-              height="200"
-              width="300"
-              style={{ aspectRatio: "300/300", objectFit: "cover" }}
-            />
-              </div> */}
               <div className="section3card">
                 <h1 className='text-3xl font-bold mb-4'>One-Way Free Drop to Mahakaleshwar Temple</h1>
                 <p className='text-sm'>Enjoy a complimentary ride to the temple for a hassle-free visit. </p>
@@ -155,7 +85,16 @@ const Services: React.FC = () => {
       <ul className="bullet-point">
         {items.map((item, index) => (
           <li key={index} className={""}>
-            <p className="text-yellow-500"><span className="textsizeservices1 bold">-</span> {item.text}</p>
+            <p className="text-black flex flex-row mb-5"><span className="textsizeservices1 bold">
+            <Image
+              src={item.icon}
+              alt="-"
+              className="w-8 mr-6 mt-2"
+              height="20"
+              width="30"
+              style={{ aspectRatio: "300/300", objectFit: "cover" }}
+            />
+              </span> {item.text}</p>
           </li>
         ))}
       </ul>
