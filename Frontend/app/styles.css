@@ -33,14 +33,14 @@ html{
 }
 
 .section1{
-    min-height: 100vh;
-    padding-top: 10vh;
+    min-height: 80vh;
+    margin-top: 10vh;
     /* border: 2px solid black; */
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    margin: 10vh;
 }
 
 .leftSection{
@@ -321,6 +321,7 @@ html{
 .sectionHeadings{
     font-size: 2.9rem;
     text-align: center;
+    
 }
 
 .sectionSubheadings{
@@ -342,10 +343,6 @@ html{
 
 .hiddensmall{
     display: block;
-}
-
-.section1img{
-    position: relative;
 }
 
 .section1Img2{
