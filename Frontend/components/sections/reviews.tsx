@@ -9,10 +9,10 @@ import ReviewCard from "../../components/ui/reviewCard";
 const ReviewSection: React.FC = () => {
     var settings = {
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 2000,
         slidesToShow: 2,
         slidesToScroll: 2,
         initialSlide: 0,
@@ -45,7 +45,7 @@ const ReviewSection: React.FC = () => {
       };
     return(
         <>
-            <section className="section7">
+            <section id="review" className="section7">
             <div className="section7headings">
             <p className='text-xl font-semibold mt-14'>-- Your Stay Host</p>
             {/* <h1 className="text-5xl font-bold mb-4 mt-10">What Our<span className='text-[#0d726c]'>Clients Say</span></h1> */}

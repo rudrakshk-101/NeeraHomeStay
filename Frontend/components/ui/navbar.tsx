@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <LogInIcon className="h-8 w-8" />
-            <span className="text-xl font-bold">Neera.</span>
+            <span className="text-xl font-bold">Neera</span>
           </div>
 
           <div className="menu-icons" onClick={handleClick}>
@@ -29,29 +29,29 @@ const Navbar: React.FC = () => {
 
           <ul className={clicked ? "navbar-menu active" : "navbar-menu"}>
           <div className="flex space-x-4">
-            <Link href="#" className="text-white" prefetch={false}>
-              Home
+            <Link href="#aboutUs" className="text-white" prefetch={false}>
+              About us
             </Link>
-            <Link href="#" className="text-white" prefetch={false}>
+            <Link href="#host" className="text-white" prefetch={false}>
+              Your Host
+            </Link>
+            <Link href="#gallery" className="text-white" prefetch={false}>
+              Gallery
+            </Link>
+            <Link href="#services" className="text-white" prefetch={false}>
               Services
             </Link>
-            <Link href="#" className="text-white" prefetch={false}>
-              Projects
+            <Link href="#nearbyAttraction" className="text-white" prefetch={false}>
+              Attractions
             </Link>
-            <Link href="#" className="text-white" prefetch={false}>
-              Blog
-            </Link>
-            <Link href="#" className="text-white" prefetch={false}>
-              About Us
-            </Link>
-            <Link href="#" className="text-white" prefetch={false}>
-              Contact Us
+            <Link href="#review" className="text-white" prefetch={false}>
+              Reviews
             </Link>
           </div>
           </ul>
-          <Button variant="default" className="bg-yellow-500 text-white">
+          <a href="#contactUs"><Button variant="default" className="bg-yellow-500 text-white">
             Get A Quote
-          </Button>
+          </Button></a>
         </div>
         </nav>
     )}

@@ -8,27 +8,27 @@ import HomePageImg from "../images/homepageimage.png";
 
 const HomePage: React.FC = () => {
   return (
-    <section className='flex justify-center items-start min-h-screen bg-gray-100'>
-      <div className="leftSection w-full md:w-1/2 px-4 py-8 sm:px-6 lg:px-8 gap-2 ">
+    <section id="homePage" className='flex justify-center items-start min-h-screen bg-gray-100'>
+      <div className="leftSection mt-[10vh] w-full md:w-1/2 px-4 py-8 sm:px-6 lg:px-8 gap-2 ">
         {/* Heading */}
-        <div className="mb-10 relative mt-[10vh] md:mt-[5vh]">
-          <h1 className="sectionHeadings font-bold mt-[12vh] mb-[-2vh] text-center md:text-left text-3xl md:text-4xl lg:text-5xl">
+        <div className="mb-10 relative md:mt-[5vh]">
+          <h1 className="sectionHeadings font-bold mb-[0vh] text-center md:text-left text-3xl md:text-4xl lg:text-5xl sm:text-2rem">
             Welcome to
           </h1>
-          <h1 className="sectionHeadings font-bold mb-[-2vh] text-center md:text-left text-3xl md:text-4xl lg:text-5xl">
+          <h1 className="sectionHeadings font-bold mb-[0vh] text-center md:text-left text-3xl md:text-4xl lg:text-5xl sm:text-2rem">
             Neera
           </h1>
-          <h1 className="sectionHeadings font-bold mb-[-2vh] text-center md:text-left text-3xl md:text-4xl lg:text-5xl mt-6">
+          <h1 className="sectionHeadings font-bold mb-[0vh] text-center md:text-left text-3xl md:text-4xl lg:text-5xl sm:text-2rem">
           <span className='text-[#0d726c]'> The Guest House! </span>
         </h1>
         </div>
 
         {/* Image for mobile */}
-        <div className='w-full max-w-md mx-auto md:hidden'>
+        <div className='templeImg '>
           <Image
             src={HomePageImg}
             alt="Professional Teams"
-            className="rounded-full w-full"
+            className="rounded-full w-full md:hidden"
             layout="responsive"
             objectFit="cover"
           />
@@ -44,12 +44,14 @@ const HomePage: React.FC = () => {
 
         {/* Button */}
         <div className="flex justify-center md:justify-start space-x-4">
+          <a href="#contactUs">
           <Button 
             variant="default" 
             className="exploreMoreBtn bg-yellow-500 text-white w-full md:w-auto px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 text-sm sm:text-base md:text-lg"
           >
             Book Now 
           </Button>
+          </a>
           {/* <Link href="#" className="exploreMoreBtn2 text-gray-700" prefetch={false}>
             View All Services
           </Link> */}
@@ -57,8 +59,8 @@ const HomePage: React.FC = () => {
       </div>
 
       {/* Image for desktop */}
-      <div className="w-full md:w-1/2 px-4 py-8 sm:px-6 lg:px-8 gap-2 hidden md:block mt-[15vh]">
-        <div className='w-full max-w-md mx-auto'>
+      <div className="w-full md:w-1/2 px-4 py-8 sm:px-6 lg:px-8 gap-2 hidden md:block mt-[9vh]">
+        <div className='w-[50vw] max-w-md mx-auto'>
           <Image
             src={HomePageImg}
             alt="Professional Teams"

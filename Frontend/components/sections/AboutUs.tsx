@@ -3,14 +3,14 @@ import placeholder1 from "../images/download.jpeg";
 
 const AboutUs: React.FC = () => {
     return (
-        <section className='section2'>
+        <section id="aboutUs" className='section2'>
           <div className="starStrip">
           <p>✨</p> <p>HouseCleaning</p> <p>✨</p> <p>OfficeCleaning</p> <p>✨</p> <p>KitchenCleaning</p> <p>✨</p> <p>FurnitureCleaning</p> <p>✨</p>
           </div>
           
-          <h1 className="text-center mt-10 sectionHeadings font-bold">About<span className='text-[#0d726c]'> Neera </span></h1>
 
           <div className="section2-1">
+          <h1 className="text-center mt-10 sectionHeadings font-bold">About<span className='text-[#0d726c]'> Neera </span></h1>
           <div className="leftsection2">
           {/* <Image
               src="https://picsum.photos/601/1060"
@@ -27,7 +27,7 @@ const AboutUs: React.FC = () => {
 
           </div>
           <div className="rightsection2">
-            <p className="section2subheading text-justify text-gray-700 pr-14 mb-8">
+            <p className="section2subheading text-justify text-gray-700 mb-8">
             &quot;Neera: The Guest House&quot; was born from a desire to create a space that feels like home for travelers seeking both comfort and a deeper connection with Ujjain&apos;s spiritual essence. We chose the term &quot;Guest House&quot; to emphasize our commitment to providing a warm, welcoming environment, much like the traditional Indian concept of &apos;Atithi Devo Bhava&apos; (Guest is God). A guest house offers a more personal touch, where every visitor is treated as a cherished guest in our home. Our name, &quot;Neera,&quot; inspired by the purity of water, reflects the calm and refreshing experience we strive to offer each guest. Our aim is to create a sanctuary where you feel more like a guest in a loved one&apos;s home, surrounded by care and tranquility.Our goal is to make you feel like a special guest in a loved one’s home, with plenty of care and peace.
           </p>
             {/* <div className="section2numbers flex justify-between mb-4 space-x-12">

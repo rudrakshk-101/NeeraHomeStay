@@ -5,10 +5,10 @@ import Image from "next/image"
 
 export default function NearbyAtraction() {
   return (
-    <section className="">
+    <section id="nearbyAttraction" className="">
         <div className="w-screen min-h-screen section7 bg-[#f5f5f5]">
       <div className="max-w-6xl mx-auto">
-        <header className="mb-8">
+        <header className="flex flex-col  items-center mb-8">
           <h1 className="text-centersmall sectionHeadings text-5xl font-bold mb-7"><br/> <span className='text-[#0d726c]'>Nearby Attractions</span></h1> 
           <h2 className="text-centersmall text-lg text-gray-500">Explore the rich spiritual and cultural heritage of Ujjain with these nearby attractions:</h2>
           {/* <Button className="mt-4 bg-yellow-400 text-black ml-auto">View All Projects</Button> */}

@@ -5,7 +5,7 @@ import person3 from "../images/person3.jpg"
 
 const Host: React.FC = () => {
     return (
-<section className="section4">
+<section id="host" className="section4">
           {/* <p className='text-xl font-semibold'>-- Your Stay Host</p> */}
           <h1 className="sectionHeadings font-bold mb-2">Meet Your <span className='text-[#0d726c]'>Host</span></h1>
           <p className="text-justify mr-10 ml-10 text-gray-700 pr-14 pl-14 mb-8">
