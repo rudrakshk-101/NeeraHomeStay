@@ -155,7 +155,7 @@ const Services: React.FC = () => {
       <ul className="bullet-point">
         {items.map((item, index) => (
           <li key={index} className={""}>
-            <p className="text-yellow-500"><span className="text-3xl bold">-</span> {item.text}</p>
+            <p className="text-yellow-500"><span className="textsizeservices1 bold">-</span> {item.text}</p>
           </li>
         ))}
       </ul>

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import placeholder from "../images/placeholder.jpeg";
 import placeholder2 from "../images/placeholder2.jpeg";
+import HomePageImg from "../images/homepageimage.png"
 
 const HomePage: React.FC = () => {
     return (
@@ -13,48 +14,49 @@ const HomePage: React.FC = () => {
           {/* <Badge variant="default" className="sectionSubheadings md:text-md text-lg thebestcleaning bg-white text-black mb-4">
             The Best Home Stay to Stay
           </Badge> */}
-          
-          <h1 className="sectionHeadings font-bold mb-2">Welcome to Neera : <span className='text-[#0d726c]'> The Guest House! </span></h1>
-          <p className="section1subheading text-gray-700 pr-14 mb-8">
+          <h1 className="sectionHeadings font-bold mb-[-2vh]">Welcome to</h1>
+          <h1 className="sectionHeadings font-bold mb-[-2vh]">Neera</h1>
+          <h1 className="sectionHeadings font-bold mb-[-2vh]"><span className='text-[#0d726c]'> The Guest House! </span></h1>
+          <p className="section1subheading text-center text-gray-700 mt-10 mb-10">
           Situated in front of a calm lake in Ujjain, Neera blends traditional Indian hospitality with modern comfort for a peaceful and memorable stay for your Family and Friends.
           </p>
-          <div className="flex space-x-4">
+          <div className="flex space-x-6">
             <Button variant="default" className="exploreMoreBtn bg-yellow-500 text-white">
-              Explore More --
+              Book Now 
             </Button>
-            <Link href="#" className="exploreMoreBtn2 text-gray-700" prefetch={false}>
+            {/* <Link href="#" className="exploreMoreBtn2 text-gray-700" prefetch={false}>
               View All Services
-            </Link>
+            </Link> */}
           </div>
           </div>
           {/* <div className="rightsection"> */}
           <div className="sectionImage md:w-1/2 flex justify-center items-center relative">
             <div className='section1img'>
             <Image
-              src={placeholder}
+              src={HomePageImg}
               alt="Professional Teams"
               className="rounded-full section1img"
-              width="300"
-              height="300"
-              style={{ aspectRatio: "180/300", objectFit: "cover" }}
+              width="570"
+              height="570"
+              style={{ aspectRatio: "300/300", objectFit: "cover" }}
             />
-            <Image
+            {/* <Image
               src={placeholder2}
               alt="Professional Teams"
               className="section1Img2 rounded-full section1img"
               width="300"
               height="300"
               style={{ aspectRatio: "300/300", objectFit: "cover" }}
-            />
+            /> */}
             </div>
-            <div className="professionalTeam absolute top-10 right-10 bg-[#0d726c] text-white p-2 rounded shadow-lg">
+            {/* <div className="professionalTeam absolute top-10 right-10 bg-[#0d726c] text-white p-2 rounded shadow-lg">
               <GroupIcon className="h-6 w-6" />
               <span>Comfort like Home</span>
             </div>
             <div className="professionalTeam absolute bottom-10 left-10 bg-[#0d726c] text-white p-2 rounded shadow-lg">
               <ShoppingCartIcon className="h-6 w-6" />
               <span>Affordable Pricing</span>
-            </div>
+            </div> */}
           </div>
         </section>
     )

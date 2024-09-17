@@ -29,22 +29,22 @@ const Navbar: React.FC = () => {
 
           <ul className={clicked ? "navbar-menu active" : "navbar-menu"}>
           <div className="flex space-x-4">
-            <Link href="#" className="text-gray-700" prefetch={false}>
+            <Link href="#" className="text-white" prefetch={false}>
               Home
             </Link>
-            <Link href="#" className="text-gray-700" prefetch={false}>
+            <Link href="#" className="text-white" prefetch={false}>
               Services
             </Link>
-            <Link href="#" className="text-gray-700" prefetch={false}>
+            <Link href="#" className="text-white" prefetch={false}>
               Projects
             </Link>
-            <Link href="#" className="text-gray-700" prefetch={false}>
+            <Link href="#" className="text-white" prefetch={false}>
               Blog
             </Link>
-            <Link href="#" className="text-gray-700" prefetch={false}>
+            <Link href="#" className="text-white" prefetch={false}>
               About Us
             </Link>
-            <Link href="#" className="text-gray-700" prefetch={false}>
+            <Link href="#" className="text-white" prefetch={false}>
               Contact Us
             </Link>
           </div>

@@ -19,15 +19,22 @@ html{
 }
 
 .navbar{
+    width: 80vw;
+    margin: 0 10vw;
+    margin-top: 5vh;
+    background-color: black;
     height: 10vh;
-    background-color: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
+    color: white;
+    border-radius: 3.3vw;
+    position: absolute;
 }
 
 .section1{
-    min-height: 83vh;
+    min-height: 100vh;
+    padding-top: 10vh;
     /* border: 2px solid black; */
     display: flex;
     flex-wrap: wrap;
@@ -45,7 +52,8 @@ html{
     margin-top: 0;
     margin-left: 5vw;
     min-height: 33vh;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 0vh;
 }
 
@@ -54,9 +62,9 @@ html{
 }
 
 .section1subheading{
-    font-size: 1rem;
-    margin-right: 2.5vw;
-    text-align: justify;
+    font-size: 1.5rem;
+    /* margin-right: 2.5vw; */
+    text-align: center;
 }
 
 .section2subheading{
@@ -67,6 +75,8 @@ html{
 
 .exploreMoreBtn{
     border-radius: 18px;
+    width: 10vw;
+    height: 6vh;
 }
 
 .exploreMoreBtn2{
@@ -310,6 +320,7 @@ html{
 
 .sectionHeadings{
     font-size: 2.9rem;
+    text-align: center;
 }
 
 .sectionSubheadings{
@@ -400,7 +411,13 @@ html{
 
 
 
+
+
 @media (max-width: 1000px) {
+
+    .section1{
+        flex-direction: column-reverse;
+    }
 
     .bottomsection3{
         flex-direction: column;
@@ -427,7 +444,7 @@ html{
 
     .section1subheading{
         font-size: 0.8rem;
-        text-align: left;
+        text-align: center;
     }
 
     .section2subheading{
@@ -485,6 +502,7 @@ html{
 
     .sectionHeadings{
         font-size: 1.5rem;
+        
     }
 
     .sectionSubheadings{
@@ -665,7 +683,7 @@ html{
 
     .section1subheading{
         width: 40vw;
-        text-align: justify;
+        text-align: center;
         /* margin-top: -10vw; */
     }
 

@@ -22,22 +22,6 @@ import Services from "../components/sections/Services";
 const Home: React.FC = () => {
   return (
     <div className="allOfTheAbove">
-        <header className="topBar">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center space-x-4">
-            <PhoneIcon className="h-5 w-5" />
-            <span>(408) 555-0120</span>
-            <MailIcon className="hiddensmall h-5 w-5" />
-            <span className='hiddensmall'>example@gmail.com</span>
-          </div>
-          <div className="flex items-center space-x-4">
-            <FacebookIcon className="h-5 w-5" />
-            <TwitterIcon className="h-5 w-5" />
-            <InstagramIcon className="h-5 w-5" />
-            <LinkedinIcon className="h-5 w-5" />
-          </div>
-        </div>
-        </header>
         <Navbar />
         <HomePage />
         <AboutUs />
