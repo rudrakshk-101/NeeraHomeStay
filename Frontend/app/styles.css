@@ -540,6 +540,10 @@ html{
     .exploreMoreBtn3{
         display: none;
     }
+
+    .leftSection{
+        margin-left: 0;
+    }
   }
 
   @media (max-width: 780px){

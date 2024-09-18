@@ -5,7 +5,7 @@ const AboutUs: React.FC = () => {
     return (
         <section id="aboutUs" className='section2'>
           <div className="starStrip">
-          <p>✨</p> <p>HouseCleaning</p> <p>✨</p> <p>OfficeCleaning</p> <p>✨</p> <p>KitchenCleaning</p> <p>✨</p> <p>FurnitureCleaning</p> <p>✨</p>
+          <p>✨</p> <p>Sacred</p> <p>✨</p> <p>Ancient</p> <p>✨</p> <p>Serene</p> <p>✨</p> <p>Spiritual</p> <p>✨</p>
           </div>
           
 
